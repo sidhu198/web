@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veloura Estates | Luxury Homes</title>
+    <meta
+      name="description"
+      content="Luxury real estate landing page with cinematic scroll animations and a filtered inventory of premium homes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="nav">
+          <div class="brand-mark">
+            <span class="brand-mark__icon">VE</span>
+            <div>
+              <p class="eyebrow">Luxury portfolio</p>
+              <h1>Veloura Estates</h1>
+            </div>
+          </div>
+          <div class="nav__links">
+            <a href="#collection">Collection</a>
+            <a href="#inventory">Inventory</a>
+            <a href="#experience">Experience</a>
+            <a class="nav__cta" href="#contact">Book a private tour</a>
+          </div>
+        </nav>
+
+        <div class="hero__content reveal">
+          <div class="hero__copy">
+            <p class="eyebrow">High-end living, curated beautifully</p>
+            <h2>Best-in-class landing page for luxury homes.</h2>
+            <p class="hero__text">
+              Discover signature residences with cinematic scroll storytelling,
+              polished micro-interactions, and an inventory experience designed
+              around brand, quality, and architecture.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#inventory">Explore inventory</a>
+              <a class="button button--ghost" href="#experience">See the experience</a>
+            </div>
+            <ul class="hero__stats">
+              <li><strong>48</strong><span>exclusive homes</span></li>
+              <li><strong>12</strong><span>global design brands</span></li>
+              <li><strong>4.9/5</strong><span>client satisfaction</span></li>
+            </ul>
+          </div>
+
+          <div class="hero__panel float-card">
+            <div class="hero__panel-top">
+              <span>Featured estate</span>
+              <span>Ocean Crest / Malibu</span>
+            </div>
+            <div class="hero__price">$12.8M</div>
+            <p>
+              Frameless ocean views, private wellness suite, and an interior
+              language shaped by stone, brass, and sculpted light.
+            </p>
+            <div class="hero__grid">
+              <div><strong>7</strong><span>Bedrooms</span></div>
+              <div><strong>8</strong><span>Baths</span></div>
+              <div><strong>9,200</strong><span>Sq Ft</span></div>
+              <div><strong>A+</strong><span>Quality score</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__backdrop"></div>
+      </header>
+
+      <main>
+        <section class="showcase section reveal" id="collection">
+          <div class="section-heading">
+            <p class="eyebrow">Signature collection</p>
+            <h3>Homes that feel editorial, timeless, and deeply premium.</h3>
+          </div>
+          <div class="showcase__grid">
+            <article class="showcase-card tilt-card">
+              <p class="showcase-card__label">Brand-led interiors</p>
+              <h4>Residences curated with world-class design names.</h4>
+              <p>
+                Featuring finishes and furnishings inspired by Boffi, Minotti,
+                Poliform, and bespoke atelier craftsmanship.
+              </p>
+            </article>
+            <article class="showcase-card tilt-card">
+              <p class="showcase-card__label">Cinematic scroll</p>
+              <h4>Motion that elevates the narrative without distraction.</h4>
+              <p>
+                Smooth section reveals, parallax lighting, and ambient depth add
+                polish to every scroll.
+              </p>
+            </article>
+            <article class="showcase-card tilt-card">
+              <p class="showcase-card__label">Luxury conversion</p>
+              <h4>Designed to convert premium buyers with clarity.</h4>
+              <p>
+                Strong calls to action, property metrics, trust details, and an
+                elegant inventory filter system.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="inventory section" id="inventory">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Inventory</p>
+            <h3>Filter by brand language and build quality.</h3>
+          </div>
+
+          <div class="filters reveal">
+            <div class="filter-group">
+              <label for="brandFilter">Brand</label>
+              <select id="brandFilter">
+                <option value="all">All brands</option>
+                <option value="minotti">Minotti</option>
+                <option value="boffi">Boffi</option>
+                <option value="poliform">Poliform</option>
+                <option value="fendi-casa">Fendi Casa</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="qualityFilter">Quality</label>
+              <select id="qualityFilter">
+                <option value="all">All quality levels</option>
+                <option value="ultra">Ultra luxury</option>
+                <option value="elite">Elite</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="inventory__grid" id="inventoryGrid">
+            <article class="listing-card reveal" data-brand="minotti" data-quality="ultra">
+              <span class="listing-card__badge">Ultra luxury</span>
+              <h4>Skyline Atelier Penthouse</h4>
+              <p class="listing-card__meta">New York • Minotti edition</p>
+              <p>
+                Double-height entertaining floor, gallery walls, private spa,
+                and panoramic skyline glass.
+              </p>
+              <div class="listing-card__footer">
+                <span>$9.6M</span>
+                <span>8,100 sq ft</span>
+              </div>
+            </article>
+
+            <article class="listing-card reveal" data-brand="boffi" data-quality="elite">
+              <span class="listing-card__badge">Elite</span>
+              <h4>Coastal Light Residence</h4>
+              <p class="listing-card__meta">Malibu • Boffi kitchens</p>
+              <p>
+                Seamless indoor-outdoor flow, travertine detailing, and a soft
+                minimalist palette by the sea.
+              </p>
+              <div class="listing-card__footer">
+                <span>$12.8M</span>
+                <span>9,200 sq ft</span>
+              </div>
+            </article>
+
+            <article class="listing-card reveal" data-brand="poliform" data-quality="premium">
+              <span class="listing-card__badge">Premium</span>
+              <h4>Garden Court Villa</h4>
+              <p class="listing-card__meta">Beverly Hills • Poliform interiors</p>
+              <p>
+                Warm woods, hidden wellness pavilion, and sculpted landscape
+                architecture for private luxury.
+              </p>
+              <div class="listing-card__footer">
+                <span>$7.4M</span>
+                <span>6,700 sq ft</span>
+              </div>
+            </article>
+
+            <article class="listing-card reveal" data-brand="fendi-casa" data-quality="ultra">
+              <span class="listing-card__badge">Ultra luxury</span>
+              <h4>Marina Noir Estate</h4>
+              <p class="listing-card__meta">Miami • Fendi Casa signature</p>
+              <p>
+                Waterfront arrival court, dramatic stone textures, and a club
+                lounge atmosphere curated for prestige entertaining.
+              </p>
+              <div class="listing-card__footer">
+                <span>$14.1M</span>
+                <span>10,300 sq ft</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="experience section reveal" id="experience">
+          <div class="experience__content">
+            <div>
+              <p class="eyebrow">Immersive experience</p>
+              <h3>Scroll-triggered elegance that feels bespoke.</h3>
+            </div>
+            <p>
+              Every block is layered with gradients, glassmorphism, parallax
+              shifts, and reveal states to deliver a modern, high-conversion
+              luxury home page.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer reveal" id="contact">
+        <div>
+          <p class="eyebrow">Private access</p>
+          <h3>Reserve a discreet consultation.</h3>
+        </div>
+        <a class="button button--primary" href="mailto:concierge@velouraestates.com">concierge@velouraestates.com</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
